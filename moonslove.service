@@ -11,3 +11,4 @@ ExecStart=/opt/moonslovebot/venv/bin/python bot.py
 
 [Install]
 WantedBy=multi-user.target
+    
