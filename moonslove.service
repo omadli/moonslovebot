@@ -1,0 +1,13 @@
+[Unit]
+Description=Moons love bot
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+Type=simple
+WorkingDirectory=/opt/moonslovebot
+ExecStart=/opt/moonslovebot/venv/bin/python bot.py
+
+[Install]
+WantedBy=multi-user.target
