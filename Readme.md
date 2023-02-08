@@ -1,5 +1,7 @@
 # Simple moonslove bot
+Teegram bot: Love test according to the phases of the moon according to the date of birth
 
+Based on the `aiogram` library
 ## Requirements
 **Python 3.8** or higher
 
@@ -74,4 +76,24 @@ To run the bot
 ```shell
 $ python bot.py
 ```
+
+### Deploy to linux server
+
+#### Copy `.service` file to `/etc/systemd/system` directory
+```shell
+$ sudo cp moonslove.service /etc/systemd/system/moonslove.service
+```
+!!! note Edit the service file depending on your server.
+
+Start bot service
+```shell
+$ sudo systemctl daemon-reload
+$ sudo systemctl enable moonslove
+$ sudo systemctl start moonslove
+```
+
+### The end
+
+
+&copy; [Murodillo](https://t.me/murodillo17)😎🫡
 
